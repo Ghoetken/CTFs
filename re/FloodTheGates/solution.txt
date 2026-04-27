@@ -1,3 +1,0 @@
-Password: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaParsons is the best!
-
-The flag is: flag{Buff3r_0v3rf10w5_4re_fun}
