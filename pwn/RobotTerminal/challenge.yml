@@ -1,0 +1,13 @@
+name: Gregory
+description: |
+  Gregory challenge.
+value: 100
+hints:
+ - content: TBD
+   cost: 10
+files: 
+ - challenge
+ - challenge.c
+flags:
+ - type: static
+   content: flag{R0B0T_C0MM4ND_C3NT3R_H4CK3D}

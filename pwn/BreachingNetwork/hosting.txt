@@ -1,0 +1,2 @@
+socat TCP-LISTEN:[port],reuseaddr,fork EXEC:./vulnerable
+# socat TCP-LISTEN:9108,reuseaddr,fork EXEC:./vulnerable

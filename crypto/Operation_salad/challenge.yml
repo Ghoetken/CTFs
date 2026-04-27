@@ -1,0 +1,12 @@
+name: Operation Salad
+description: |
+  We found this strange message seemly composed of different operations. Nobody can figure out what it means, can you crack the code.
+
+  ```*-()/()()*+^*-^/*/**-^*()/^/*/-*++^*()/()*/^**/-/^^/()+*+-^*+*--*/-^*()/()+^*//^()*+^/^**-//()//()**-//^^*-*^+//*-```
+value: 300
+hints:
+ - content: Can you convert the message to a base? Think of order of operations. 
+   cost: 150
+flags:
+ - type: static
+   content: flag{Y0u_d0nt_spe4k_0p3rationish?}

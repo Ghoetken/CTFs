@@ -1,0 +1,17 @@
+name: Network Backdoor
+description: |
+  You've hacked into a blacksite node and now have a backdoor into their whole operation. Find whatever secrets you can.
+
+  Enter the blacksite node here: nc 10.56.50.66 2003
+value: 300
+hints:
+ - content: The input is looking for a string. Try different string lengths until you see the port number variable change.
+   cost: 100
+ - content: Look up how 64-bit function call arguments work.
+   cost: 100
+files: 
+ - vulnerable.c
+ - vulnerable
+flags:
+ - type: static
+   content: flag{w1nn3r_w1nn3r_ch1xk3n_d1nn3r}

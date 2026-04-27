@@ -1,0 +1,18 @@
+name: Vaults
+description: |
+  Provided is a program used to purchase and manage Vaults that store memory on the heap. On a remote server this program is running where a previous user already created a Vault.
+  Can you find a way to break into the users Vault, I hear he stored something valuable inside!
+
+  Access remote Vaults by entering: nc [IP_ADDRESS] 5410
+  Note: C file runs against glibc version 2.35
+value: 850
+hints:
+ - content: Can you find a way to corrupt the saved vault sizes? This will help you overflow and leak parts of the heap.
+   cost: 150
+ - content: Once you can overflow and leak the heap find a way to force a free call on a chunk of data sending it to tcache bins. Then try a tcache poison attack.
+   cost: 250
+files: 
+ - vaults
+flags:
+ - type: static
+   content: flag{1_tH0uGhT_Th15_v4UlT_w4s_53curE!}

@@ -1,0 +1,5 @@
+Walkthrough:
+
+1. Generate a spectorgram of the audio file
+2. examine the encoding in the high frequency range, see that the encoding is comprised of 4 distinct frequencies
+...

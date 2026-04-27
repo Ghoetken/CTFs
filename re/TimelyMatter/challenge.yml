@@ -1,0 +1,17 @@
+name: TimelyMatter
+description: |
+  Connect remotely to access a passcode protected flag. The exectuable is provided locally for testing but flag is only accesible 
+  remotely. Note the remote server is running in (TIME_ZONE).
+
+  To access the passcode protected flag start here: nc 10.56.50.66 2993
+value: 600
+hints:
+ - content: The passcode relies on the current time down to the seconds at the moment the code is entered in the time zone of the remote server.
+   cost: 250
+ - content: Minutes and seconds are the same no matter the time zone, try creating a seconds counter display locally for precision.
+   cost: 50
+files: 
+ - timely
+flags:
+ - type: static
+   content: flag{c0d3s_th4t_ch4g3_by_th3_s3c0nd}

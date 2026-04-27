@@ -1,0 +1,9 @@
+Walkthrough: 
+1. Decompile the binary
+2. Recreate the C logic in your own C code, however instead of using local time like the program uses set the program to dynamically take in time variables 
+so you can calculate the code for any specified time 
+3. Choose some future time to calculate the code for and enter the code at that exact time 
+
+Notes: 
+be precise, it uses time down to the second
+Some online live time monitors are slightly delayed, maybe add a live localtime second counter to your C solution program for extra precision

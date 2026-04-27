@@ -1,0 +1,16 @@
+name: LockBox
+description: |
+  There is access to a super secure password protected LockBox. Try to exploit the program to gain access to the contents of the box. You are also 
+  provided with the source code and executable locally to help.
+
+  Find the LockBox here: nc 10.56.50.66 2333
+value: 200
+hints:
+ - content: Format string attack can be useful here.
+   cost: 100
+files: 
+ - LockBox
+ - main.c
+flags:
+ - type: static
+   content: flag{H0wd_y0u_0p3n_my_b0x!?!}

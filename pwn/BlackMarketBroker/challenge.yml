@@ -1,0 +1,22 @@
+name: Black Market Broker
+description: |
+  You've gained access to the BEAR's secret market where all of his nefarious deals go down. Can you trick the program to give you sensitive information?
+  We need to know what is passing through this market.
+  
+  Your mission, should you choose to accept it, starts with connecting to the market with: nc 10.56.50.66 1993
+value: 1000
+hints:
+ - content: Figure out a way to print out more vaults than allowed. Once you get the output, think about what you're seeing in terms of where a vault is located and what it contains.
+   cost: 100
+ - content: Think of a way to attack the heap. Maybe look up a House of Botcake attack.
+   cost: 250
+ - content: The idea is to successfully control a deal that overlaps with the stack so you can write to the stack. Once you can do that, leak libc and pop a shell to read the flag.
+   cost: 350
+files: 
+ - challenge.c
+ - challenge
+ - libc.so.6
+ - ld-linux-x86-64.so.2
+flags:
+ - type: static
+   content: flag{h34p_0f_tr0ub13_bu7_h34p_0v3rf10w_g07_m3_0u7}

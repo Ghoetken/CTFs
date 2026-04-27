@@ -1,0 +1,15 @@
+name: SeedSurfing
+description: |
+  Access a passcode protected flag. Provided is the passcode protection executable used remotely, use it to test
+  locally. The flag is only accessable remotley.
+
+  Connect here: nc 10.56.50.66 2773
+value: 200
+hints:
+ - content: If srand(SEED) is given the same seed it will produce the same rand() output everytime.
+   cost: 100
+files: 
+ - SeedSurfing
+flags:
+ - type: static
+   content: flag{gr3at_sE3ds_th1nK_Al1k3}

@@ -1,0 +1,18 @@
+name: High Score
+description: |
+  Try to beat the high score for this guessing game! Or exploit it if you can't win I guess. 
+  
+  Beat the high score at: nc 10.56.50.66 2223
+value: 750
+hints:
+ - content: Try using string format exploits to leak canary and return address.
+   cost: 150
+ - content: Dynamically calculate pie base to find function addresses. 
+   cost: 150
+ - content: Make a ROP chain with a sequence of function calls to extract the flag.
+   cost: 150
+files: 
+ - high_score
+flags:
+ - type: static
+   content: flag{1_th1nk_y0u_ch34t3d}

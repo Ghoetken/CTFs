@@ -1,0 +1,13 @@
+name: Dead Ends
+description: |
+  Run ssh ctf@10.56.50.66 -p 2553 to play my maze! Beat the maze to win a flag. I will provide the executable so you can play locally but the flag can
+  only be won remotely. Goodluck!
+value: 400
+hints:
+ - content: Decompile the executable, look for a sequence check in the main function.
+   cost: 200
+files: 
+ - maze
+flags:
+ - type: static
+   content: flag{k0nami_che4t_c0de_st1ll_in_uSe}

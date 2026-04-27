@@ -1,0 +1,18 @@
+name: Flags_on_sale
+description: |
+  There is a flag on sale! However you are only given a dollar and the price of the flag is expensive. Exploit a provided banking system in the 
+  executable to aquire the flag. You will be provided with the exectuable file and and source code locally to help you find a vunerablity.
+  
+  To purchase the flag start here: nc 10.56.50.66 2113
+value: 470
+hints:
+ - content: You can overflow in the make_deposit function, can you corrupt anything useful?
+   cost: 70
+ - content: Try to corrupt your overflow target without changing anything else on the stack.
+   cost: 100
+files: 
+ - flag_on_sale
+ - main.c
+flags:
+ - type: static
+   content: flag{Fl4gs_4r3_g3tt1ng_pr1c3y!}

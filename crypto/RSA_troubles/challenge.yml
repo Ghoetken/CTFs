@@ -1,0 +1,17 @@
+name: RSA_Troubles
+description: |
+  I have created a custom RSA key generating script to generate random RSA key pairs. I used it to encrypt a flag, see if you can find a way to decrypt.
+  I will provide you will the key generation python script I used to generate my keys.
+value: 800
+hints:
+ - content: There is a vuneralbility in how I generated the primes for my key generation, exploit it.
+   cost: 150
+ - content: Look into a fermat attack.
+   cost: 350
+files: 
+ - ciphertext.txt
+ - public_key.txt
+ - key_generation.py
+flags:
+ - type: static
+   content: flag{f01l3d_by_f3rm4t}

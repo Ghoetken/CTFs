@@ -1,0 +1,6 @@
+You haven't found the flag just yet! 
+
+In the /root directory there is another flag.txt file.
+
+However, you don't have access to that directory. Look around and see what you could do to
+be able to read what is in the /root directory.

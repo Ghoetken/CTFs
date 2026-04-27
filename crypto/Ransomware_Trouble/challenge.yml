@@ -1,0 +1,17 @@
+name: Ransomware_Trouble
+description: |
+  Whoops... I accidently ran this malicious python program that encrypted all my files. How was I supposed to know it was going to do that!
+  Well I guess it was labeled ransomware.py... well now they want ransom for the key to decrypt my files. I don't think they did a very good job
+  encrypting the data though, you think you can salvage my files without paying the ransom. I've provided the ransomware python script and the 
+  corrupted files. 
+value: 350
+hints: 
+ - content: The XOR key length can be found and one of the files is a known document, using this information how can you recover the key?
+   cost: 100
+files: 
+ - ransomware.py 
+ - Pidgeons.txt
+ - emancipation_proclamation.txt
+flags:
+ - type: static
+   content: flag{P1dg30Ns_aRe_4m4z1Ng!!}

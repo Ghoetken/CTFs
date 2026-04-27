@@ -1,0 +1,16 @@
+name: Knowledge_is_power
+description: |
+  This flag has been encrypted, can you figure out how to decrypt it and recover the flag?
+
+  2f2d0c2c1e193b72593f3a267913066a3a3c7a353232550b16255c2f0b0a1672153b001d3d1e136a4403
+value: 220
+penalty: 50
+minimum: 10
+hints: 
+ - content: It looks like a XOR encryption can you figure out the XOR key to decrypt the message?
+   cost: 50
+ - content: Flags always take the form flag{ ... } can you use this knowlege to recover the key?
+   cost: 100
+flags:
+ - type: static
+   content: flag{gr34t_X0Rk!_B3t_y0u_d1dnt_3xpect_~!!}

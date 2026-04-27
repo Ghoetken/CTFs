@@ -1,0 +1,7 @@
+Walkthrough:
+
+1. Use the string format vulnerability to leak the stack canary and return address of the stack
+2. Use the return address to calculate the PIE base
+3. Use the PIE base to calculate the address of needed functions and ROP gadgets, add_pts and flag functions along with a pop rdi gadget
+4. Craft a payload to overflow onto the stack, the overflow needs to bypass the stack canary and then create an ROP chain to call pop rdi
+to set the rdi register with a value higher than 480, then call add_pts to add rdi to your points total, then lastly call flag to retrieve the flag.

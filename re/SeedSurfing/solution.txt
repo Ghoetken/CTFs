@@ -1,0 +1,4 @@
+Walthrough: 
+1. Decompile the code
+2. Recreate the logic used to generate the password yourself using the same seeds for the srand function
+3. If logic is recreated correctly you should find the correct code (1814)

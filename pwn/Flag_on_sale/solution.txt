@@ -1,0 +1,7 @@
+Walk-through solution:
+
+1. Find the memory address of FLAG_PRICE global variable, with no PIE enabled this should be relatively simple to find
+2. Create a bank account and go to make a deposit
+3. Craft an stack overflow payload to inject into the deposit amount input. The payload should leave a 1 in the input buffer and the overflow into the 
+account address on the stack, override the account address with the FLAG_PRICE address
+4. Now the FLAG_PRICE should be incremented and integer overflowed to a negative number, now navigate to the store and buy the flag 

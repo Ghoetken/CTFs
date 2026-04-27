@@ -1,0 +1,4 @@
+Walkthrough:
+The code prompts for a passcode which is dynamically calculated ever time to solve
+1. Use the string format vulnerability to leak things of the stack
+2. Use trial and error to find where the password is saved on the stack, once you've found it you can then enter it and gain access to the flag

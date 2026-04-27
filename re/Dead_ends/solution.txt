@@ -1,0 +1,5 @@
+Walkthrough: 
+1. Decompile the maze
+2. Notice a hardcoded input sequence being checked against user input
+3. Enter that sequence (up up down down left right left right "b" "a" enter) in the maze 
+4. Solve the maze (now solvable)

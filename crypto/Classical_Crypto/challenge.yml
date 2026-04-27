@@ -1,0 +1,14 @@
+name: Classical_Crypto
+description: |
+  I was able to intercept a super secret audio file but it seems to be nothing but some classical music, how dissapointing.
+value: 570
+hints:
+ - content: Look at the inaudiable frequency ranges. Use a spectrogram maybe?
+   cost: 150
+ - content: If you find a hidden siganl try interpretting it as base 4.
+   cost: 250
+files: 
+ - audio.wav
+flags:
+ - type: static
+   content: flag{y0u_c4n't_h3aR_mE}

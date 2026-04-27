@@ -1,0 +1,14 @@
+name: Bidirectional Chains
+description: |
+  Here is a password protected binary, can you figure out how to obtain the password and get to the flag?
+value: 850
+hints:
+ - content: The input is parsed and stored as a linked list.
+   cost: 150
+ - content: Try to replicate both encrypting algorithms and produce an input that encrypts the matches both byte arrays.
+   cost: 200
+files: 
+ - BidirectionalChains
+flags:
+ - type: static
+   content: flag{N1c3_L0gic_B4o}

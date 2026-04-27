@@ -1,0 +1,10 @@
+Walkthrough:
+Context - 
+User input is stored as a linked list of chars. There is an forward encoding algorithm and backward encoding algorthmn, these will use the current char and the previous
+encoding byte to calculate the new encoded byte. For the first calculation the algorithm uses a hard code byte because there is not previous encoded byte. 
+The forward encoding (starting at the first char and working to the last) and the backward encoding (starting at the last and working to the first) are saved in the 
+linked list along with the original input. The encodings are then checked against global tables containing what the encodings should be. 
+solution - 
+1. copy over the encoding algorthms along with the global tables
+2. peice together the flag by brute force trying ever character through the encoding algorthms and checking to see if both the forward and backward encoding matches the 
+tables
