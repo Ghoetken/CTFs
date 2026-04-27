@@ -1,5 +1,0 @@
-1. You need to flip the bits of the encoded encoded message 
-2. You need to convert the bytes to base 10
-3. You need to take the first 4 characters and put them at the end 
-4. You need to rot 13 decode the message 
-5. You need to base 64 decode the message
