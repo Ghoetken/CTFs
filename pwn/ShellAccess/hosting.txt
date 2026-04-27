@@ -1,2 +1,0 @@
-socat TCP-LISTEN:[port],reuseaddr,fork EXEC:/home/ctf/ld-linux-x86-64.so.2 --library-path /home/ctf /home/ctf/vulnerable
-# socat TCP-LISTEN:9108,reuseaddr,fork EXEC:/home/ctf/ld-linux-x86-64.so.2 --library-path /home/ctf /home/ctf/vulnerable
